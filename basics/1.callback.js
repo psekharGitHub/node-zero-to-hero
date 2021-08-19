@@ -7,7 +7,6 @@ function Sample(param){
 }
 
 
-console.log(Sample(
-    function(name){
-        return name}
-    ))
+console.log(Sample(function(name){
+        return name
+    }))

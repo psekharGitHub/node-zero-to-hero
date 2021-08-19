@@ -22,7 +22,7 @@ Process Object
 
 Module Types
 ------------
-1. Core Modules - http, url, querystring, path etc..
+1. Core Modules - http, url, querystring, path, fs util
 2. Local Modules
 3. Third Party Modules
 

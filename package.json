@@ -1,16 +1,22 @@
 {
-  "name": "node-basic-app",
+  "name": "node-zero-to-hero",
   "version": "1.0.0",
   "description": "A basic node application to explore nodeJS",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon Student.js"
   },
   "author": "psekharGithub",
   "license": "ISC",
   "devDependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mssql": "^7.2.0"
   }
 }
+

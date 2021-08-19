@@ -20,4 +20,5 @@ var data = [
 ]
 
 // module.exports = "Hello World"
-module.exports = {log: log, data: data}
+// module.exports = {log: log, data: data}
+module.exports = data

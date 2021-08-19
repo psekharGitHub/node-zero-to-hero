@@ -1,7 +1,7 @@
-const data = require('./4.local-module')
+const data = require('./4.local-modules')
 
-// logModule.info('This is information')
-// logModule.warn('This is warning')
-// logModule.error('This is error')
+ // data .info('This is information')
+ // data.warn('This is warning')
+ // data.error('This is error')
 
 console.log(data)
