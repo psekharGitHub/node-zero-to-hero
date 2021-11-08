@@ -1,0 +1,5 @@
+const sayHi = function sayHi(name) {
+    console.log(`Say Hi to ${name}`)
+}
+
+module.exports = sayHi

@@ -1,0 +1,52 @@
+GLOBALS - NO WINDOW
+
+- _dirname - path to current directory
+- _filename - filename
+- require - function to use modules
+- module - info about current module(file)
+- process - info about env where the process is being executed
+
+MODULES - Encapsulated code(only sharing minimum)
+
+- exports - it is needed to make certain features to be available in another
+            module. We decide what to share and what not to.
+
+Sync vs Async
+- Synchronous approach is time consuming as if any task in between first and last task
+  takes longer time, then entire time of the application increases hugely.
+- Asynchronous approach, where current task need not wait for the completion of previous
+  task, so no extra wait time for the application
+
+npm installation
+--------------------
+- npm --version / npm --v (check version)
+- npm i <packageName>  (local / for the particular project)
+- npm install -g <packageName> (install globally)
+- package.json (manifest file that stores important information about project or package)
+    -mannual approach
+    -npm init (step by step approach, press enter to skip)
+
+Event Loops
+--------------
+Event loops are what that allows NodeJS to perform non blocking operations, despite javascript
+being single threaded, by offloading time consuming operations to system kernel whenever pos
+
+EventEmitter
+---------------
+- You can target multiple events with a single emitter
+- The order of event and emitting response is crucial. We cannot emit before an event occurs
+- We can pass necessary arguments while emitting, by passing them as arguments in the callback
+  function in the 'on' statements.
+
+  Streams
+  --------------
+  - used to read or write data sequentially, like writable, readable, duplex, transform
+
+  Middleware
+  --------------
+  - functions are functions that have access to the request object (req), the response object
+    (res), and the next middleware function in the application’s request-response cycle
+  - These functions are used to modify req and res objects for tasks like parsing request bodies,
+    adding response headers, etc.
+  - reduces code redundancies, by putting everything under a single logger and using it as
+    middleware for future server requests.
