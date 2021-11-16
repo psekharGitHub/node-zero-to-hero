@@ -14,7 +14,7 @@ app.get('/api/products', (req,res) => {
   res.json(newProduct)
 })
 
-app.get('/api/products/:productId ', (req,res) => {
+app.get('/api/products/:productId', (req,res) => {
   const { productId } = req.params;
   
   const singleProduct = products.find((product) => {
